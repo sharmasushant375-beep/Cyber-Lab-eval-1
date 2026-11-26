@@ -1,0 +1,51 @@
+Experiment No. 9th
+Aim:
+
+To use Wireshark and Cookies Editor to inspect cookies on a social media webpage and understand how to detect and prevent cookie-grabbing attacks.
+
+Software Required:
+Wireshark
+Cookies Editor Extension
+Google Chrome
+Internet Connection
+Theory:
+
+Wireshark: A network analysis tool used to capture and examine network packets.
+
+Cookies: Small pieces of data stored in a browser to remember user sessions and preferences.
+
+Cookies Editor: A browser extension used to view and manage website cookies.
+
+Cookie-Grabbing Attack: An attack in which hackers try to steal session cookies to gain unauthorized access to user accounts.
+
+Procedure:
+
+Part A: Using Wireshark
+
+Open Wireshark.
+Select the active network interface (Wi-Fi/Ethernet).
+Click on Start Capture.
+Open Chrome and visit a social media website.
+Observe the captured network packets.
+Apply the http or tls filter.
+Stop the packet capture.
+
+Part B: Using Cookies Editor
+
+Open Google Chrome.
+Install the Cookies Editor extension.
+Visit a social media website.
+Click on the Cookies Editor extension.
+View the cookies associated with the website.
+Observe cookie properties such as name, domain and security attributes.
+Defensive Measures:
+Always use HTTPS websites.
+Enable the Secure attribute for cookies.
+Use the HttpOnly attribute to prevent JavaScript access to cookies.
+Enable the SameSite attribute.
+Avoid using unsecured public Wi-Fi.
+Enable Two-Factor Authentication.
+Keep browsers updated.
+Result:
+
+Successfully studied Wireshark and Cookies Editor to inspect network traffic and website cookies. Also, understood the defensive techniques used to detect and prevent cookie-grabbing attacks.

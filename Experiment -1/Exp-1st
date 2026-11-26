@@ -1,0 +1,27 @@
+site:wikipedia.org artificial intelligence
+
+site:github.com inurl:login
+
+site:*.gov.in filetype:pdf
+
+site:nasa.gov filetype:pdf
+
+filetype:xls "budget"
+
+intitle:"index of" "parent directory"
+
+allintitle:annual report 2025
+
+intitle:"login page" site:*.edu
+
+inurl:admin site:*.in
+
+allinurl:wp-content uploads
+
+inurl:php?id=
+
+site:*.gov filetype:pdf intext:"budget"
+
+allintext:username password filetype:log
+
+intext:"confidential" filetype:pdf

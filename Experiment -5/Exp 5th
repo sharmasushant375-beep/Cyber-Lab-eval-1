@@ -1,0 +1,121 @@
+Experiment No. 5
+
+
+Aim
+
+To perform a Brute-Force and Dictionary attack using Hydra on an authorized test server and understand password vulnerabilities.
+
+Tools Required
+
+• Computer / Laptop (Windows OS)
+• Kali Linux
+• Hydra
+• Authorized Test Server
+• Test Username and Password
+• Active Network Connection
+
+Theory
+
+
+Dictionary Attack
+
+A dictionary attack is a specific type of password-cracking technique that uses a predefined list of commonly used words (a wordlist) to discover a correct password. This method is highly effective against weak, simple, or common passwords.
+
+Brute-Force Attack
+
+A brute-force attack is an automated password-guessing technique in which every possible combination of characters is systematically and sequentially tried until the correct password is found.
+
+Hydra
+
+Hydra is a fast and flexible network login auditing tool used to test the security of remote authentication services. It performs centralized parallel login attempts using supplied usernames and password lists to demonstrate how vulnerable weak authentication mechanisms are to automated guessing techniques.
+
+Installation of Kali Linux on Windows
+
+Kali Linux can be installed and run inside a Windows environment using virtualization software (hypervisors) such as Oracle VirtualBox or VMware Workstation.
+
+Procedure
+
+
+Initial Setup
+
+1. Download and install a virtualization software (e.g., VMware or VirtualBox).
+2. Download the official Kali Linux ISO file.
+3. Create a new virtual machine instance within the hypervisor.
+4. Select the downloaded Kali Linux ISO as the boot/installation media.
+5. Allocate suitable system resources (RAM and storage) to the virtual machine.
+6. Start the virtual machine and complete the step-by-step Kali Linux installation.
+7. Launch Kali Linux after the installation is complete.
+8. Open the terminal and verify that hydra is installed and available.
+
+A) Setting up the Test Environment
+
+• Start the Kali Linux virtual machine.
+• Start the targeted authorized test server.
+• Verify and note down the exact IP address of the test server.
+• Ensure that the required network authentication service is actively running on the test server.
+• Create a specific test user account on the target server for validation.
+
+B) Performing the Dictionary Attack
+
+• Prepare or locate a test wordlist suitable for a dictionary attack.
+• Ensure the password wordlist contains the designated test password.
+• Specify the authorized test username in the command parameters.
+• Identify the target test server IP address and target service protocol (e.g., SSH, FTP, HTTP).
+• Run the Hydra command using the prepared user and wordlist inputs.
+• Observe the automated authentication attempts processed in the terminal.
+• Verify if Hydra successfully cracks and displays the matching test password from the wordlist.
+• Record the final results and findings.
+C) Performing Brute-Force Attack
+
+• Open the terminal in Kali Linux.
+• Verify that Hydra is installed and ready.
+• Specify the authorized test username.
+• Specify the target test server IP address and authentication service.
+• Run Hydra using the appropriate brute-force syntax and options.
+• Observe the automated authentication attempts in the terminal window.
+• Record the final findings and results.
+
+Hydra Execution & Commands
+
+Hydra is utilized for centralized authentication testing by passing critical parameters including the target username, password sources, target IP, and the active authentication service type.
+
+1. Dictionary Attack Using Hydra
+
+In a dictionary attack, Hydra systematically reads passwords from a predefined wordlist file and tests them one by one against the specified username.
+• General Formula / Command:bash
+hydra -l username -P wordlist target service
+Use code with caution.
+• Switches Used:
+	• -l \(\rightarrow \) Specifies the single username to be tested.
+	• -P \(\rightarrow \) Specifies the path to the password wordlist file.
+
+2. Brute-Force Attack Using Hydra
+
+In a pure brute-force attack, Hydra algorithmically generates custom character combinations based on defined parameters (instead of using an external file) and tests them against the authentication service.
+• General Formula / Command:bash
+hydra -l username -x min:max:charset target service
+Use code with caution.
+• Switches Used:
+	• -x \(\rightarrow \) Defines the brute-force generation constraints in the format: min_length:max_length:character_set (e.g., 3:5:a for lowercase characters spanning 3 to 5 characters long).
+
+Observations & Analysis
+
+
+Result of the Attacks
+
+• Dictionary Attack: Successfully identified and pulled the correct test password, provided the password was explicitly present within the supplied text wordlist.
+• Brute-Force Attack: The attack successfully calculated and matched the correct test password after processing multiple automated mathematical character combinations and login attempts.
+
+Identified Password Vulnerabilities
+
+• Weak, short, predictable, or commonly recycled passwords are highly susceptible to quick compromise via automated password-guessing engines like Hydra.
+
+Mitigation Steps
+
+• Enforce strong, complex, and unique password creation guidelines.
+• Implement strict account lockout policies after a set number of failed login attempts.
+• Deploy multi-factor authentication (MFA) to block automated authentication bypasses.
+
+Final Conclusion
+
+The Dictionary and Brute-Force attacks were successfully executed and analyzed using Hydra against an authorized test server, demonstrating the key risks associated with weak password configurations.

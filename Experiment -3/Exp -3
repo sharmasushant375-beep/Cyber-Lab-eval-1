@@ -1,0 +1,35 @@
+Experiment-3rd
+
+Aim: To Install Nmap & perform network scans to discover hosts & services using different scan types such as TCP SYN scan & UDP scan.
+Tools Required:
+• Nmap
+• Windows Command Prompt
+Theory:
+Network Mapper is a network scanning tool used to discover hosts, open ports & services running on a network.
+• TCP SYN Scan: It sends SYN packets to determine whether TCP ports are open.
+• UDP Scan: It scans UDP ports to identify open or filtered UDP services.
+Procedure:
+1. Check Nmap Installation
+nmap --version
+2. Host Discovery
+nmap -sn 127.0.0.1
+3. TCP SYN Scan
+nmap -sS 127.0.0.1
+4. UDP Scan
+nmap -sU 127.0.0.1
+
+Observations:
+
+• Host Discovery:
+The Scan detected the local host & showed that the host is up.
+• TCP SYN Scan:
+The Scan displayed the TCP ports & their states/services on the local host.
+• UDP Scan:
+The Scan displayed the UDP ports & their states/services on the local host.
+
+Output:
+
+
+Result:
+
+Nmap was successfully installed & used to perform host discovery, TCP SYN scanning, & UDP scanning. The available ports & services were identified successfully

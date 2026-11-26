@@ -1,0 +1,28 @@
+# Experiment No. 7: Cryptographic Hash Function Properties
+
+**Aim:** To study the properties of cryptographic hash functions, including preimage resistance, second preimage resistance and collision resistance.
+
+**Tools Required:**
+1. Computer/Laptop
+2. Web browser
+3. Cryptographic Hash Simulator
+
+**Theory:**  
+A cryptographic hash function converts input data into a fixed-length hash value. It provides data integrity and security. A secure hash function should satisfy preimage resistance, second preimage resistance and collision resistance.
+
+**Procedure:**
+1. Open the cryptographic hash simulator.
+2. Enter a message and select the SHA-256 algorithm.
+3. Generate and observe the hash value.
+4. Change the input slightly and compare the resulting hashes.
+5. Perform the preimage resistance challenge.
+6. Perform the second preimage and collision resistance challenges.
+7. Observe and record the results.
+
+**Properties:**
+- **Preimage Resistance:** Finding the original input from its hash is computationally infeasible.
+- **Second Preimage Resistance:** Finding another input with the same hash as a given input is computationally infeasible.
+- **Collision Resistance:** Finding two different inputs with the same hash is computationally infeasible.
+
+**Result:**  
+The properties of cryptographic hash functions were studied using the simulator, and the working of SHA-256 hashing and its security properties was observed successfully.

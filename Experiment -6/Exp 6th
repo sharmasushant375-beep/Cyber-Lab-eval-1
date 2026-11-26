@@ -1,0 +1,26 @@
+Experiment No. 6: Data Transformation Within the MD5 Hashing Algorithm
+
+Aim: To understand the working of the MD5 hashing algorithm through padding, initialization, nonlinear functions and buffer updates.
+
+Tools Required:
+
+1. Computer/Laptop
+2. Web browser
+3. MD5 hashing simulator
+
+Theory:
+MD5 is a hashing algorithm that converts input data into a fixed-length 128-bit hash value. It processes data in 512-bit blocks using padding, nonlinear functions, constants, circular shifts and buffer updates.
+
+Procedure:
+
+1. Open the MD5 hashing simulator in a web browser.
+2. Enter a text message and click Generate.
+3. Observe the message padding and initialization steps.
+4. Apply the nonlinear functions and buffer operations.
+5. Observe the addition of constants and circular shifts.
+6. Update and shift the buffers to obtain the final hash value.
+
+Result:
+The working of the MD5 hashing algorithm was studied, and the transformation of input data into a 128-bit hash value was observed successfully.
+
+Note: MD5 is not considered secure for modern cryptographic applications because it is vulnerable to collision attacks.

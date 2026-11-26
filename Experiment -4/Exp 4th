@@ -1,0 +1,59 @@
+Experiment 4
+
+Aim:
+To install Wireshark, capture network traffic on a specific network interface, and analyze the captured packets to identify different protocols and data types.
+Tools Required:
+• Wireshark
+• Windows OS
+• Internet connection
+Theory:
+Wireshark is a network protocol analyzer used to capture and analyze network packets. It displays detailed transmission information such as the packet source, destination, protocol, packet length, and inner packet details.
+
+Procedure
+
+
+Part A: Installing Wireshark
+
+1. Open a web browser.
+2. Go to the official Wireshark website.
+3. Click on the Download option.
+4. Download the appropriate Windows installer.
+5. Open the downloaded installer file.
+6. Follow the setup prompts in the installation wizard and accept the default components.
+7. During the installation process, ensure you allow the required Npcap component to be installed.
+8. Complete the installation.
+9. Launch Wireshark from the Start Menu.
+Part B: Capturing Network Traffic
+
+1. Open Wireshark.
+2. On the main welcome screen, locate the Capture section.
+3. Select the active network interface (such as Wi-Fi or Ethernet).
+4. Double-click the active interface (e.g., Wi-Fi) to start capturing packets.
+5. Open a web browser and visit a few websites to generate network traffic.
+6. Wait for approximately 20–30 seconds.
+7. Click the red Stop button in the top toolbar to stop the packet capture.
+
+Part C: Analyzing Captured Packets
+
+The captured packets are displayed in the packet list pane with the following details:
+• No.: The sequential packet number.
+• Time: The relative time at which the packet was captured.
+• Source: The source network address.
+• Destination: The destination network address.
+• Protocol: The network protocol used by the packet.
+• Length: The size of the packet in bytes.
+• Info: Additional context and details about the packet contents.
+
+Part D: Applying Display Filters
+
+To isolate and identify specific network protocols, enter the following keywords into the Display Filter box at the top of the screen:
+• DNS: dns
+• TCP: tcp
+• UDP: udp
+• ARP: arp
+• ICMP: icmp
+After entering each filter, press Enter to display only the packets belonging to that specific protocol.
+
+Result
+
+Wireshark was successfully installed and used to capture network traffic. The captured packets were analyzed, and different network protocols along with their packet information were identified successfully.

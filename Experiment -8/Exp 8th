@@ -1,0 +1,29 @@
+# Experiment No. 8: Network Intrusion Detection Using Snort
+
+**Aim:** To install and configure Snort IDS and detect network traffic using ICMP alert rules.
+
+**Tools Required:**
+1. Computer/Laptop
+2. Kali Linux
+3. Snort IDS
+4. Network connection
+
+**Theory:**  
+Snort is an open-source Network Intrusion Detection System (NIDS) used to monitor network traffic and detect suspicious activities. It generates alerts based on predefined rules.
+
+**Procedure:**
+1. Install Snort on Kali Linux.
+2. Check the network interface and IP address.
+3. Create a directory for the Snort lab.
+4. Create a local rule to detect ICMP traffic.
+5. Configure Snort to use the custom rule.
+6. Run Snort in alert mode and generate ICMP traffic using the `ping` command.
+7. Observe and record the generated alerts.
+
+**Command:**
+```bash
+sudo snort -q -c /etc/snort/snort.lua -R ./local.rules -i eth0 -A alert_fast
+```
+
+**Result:**  
+Snort was successfully configured to detect ICMP traffic and generate alerts. Network intrusion detection using custom rules was studied successfully.

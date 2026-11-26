@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+struct StudentData {
+    char buffer[8];
+    char status[8];
+};
+
+int main() {
+    struct StudentData data;
+    
+    // Initialize the status variable
+    strcpy(data.status, "SAFE");
+    
+    printf("Before Overflow:\n");
+    printf("Status: %s\n", data.status);
+    printf("Address of buffer: %p\n", (void *)data.buffer);
+    printf("Address of status: %p\n", (void *)data.status);
+    
+    // Overflowing the 8-byte buffer to overwrite the adjacent status memory
+    strcpy(data.buffer, "AAAAAAAAHACKED");
+    
+    printf("\nAfter Overflow:\n");
+    printf("Buffer: %s\n", data.buffer);
+    printf("Status: %s\n", data.status);
+    
+    return 0;
+}
